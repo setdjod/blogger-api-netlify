@@ -1,0 +1,24 @@
+[build]
+  command = "npm install && npm run build"
+  functions = "build"
+  publish = "build"
+
+[build.environment]
+  APP_ENV = "development"
+  API_URL = "https://www.blogger.com/feeds"
+  BLOG_ID = "1039638699676093290"
+
+[context.production.environment]
+  APP_ENV = "production"
+  API_URL = "https://www.blogger.com/feeds"
+  BLOG_ID = "8509687188718157504"
+
+[context.deploy-preview.environment]
+  APP_ENV = "development"
+  API_URL = "https://www.blogger.com/feeds"
+  BLOG_ID = "1039638699676093290"
+
+[context.debug.environment]
+  APP_ENV = "development"
+  API_URL = "https://www.blogger.com/feeds"
+  BLOG_ID = "1039638699676093290"
