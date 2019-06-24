@@ -1,0 +1,36 @@
+{
+  "name": "blogger-api-netlify",
+  "version": "1.0.0",
+  "description": "Blogger API to use directly",
+  "main": "api/_default.js",
+  "scripts": {
+    "build": "netlify-lambda build api",
+    "serve": "netlify-lambda serve api"
+  },
+  "author": "Setiawan Jodi",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "request": "^2.88.0",
+    "serverless-http": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "netlify-lambda": "^1.4.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/setdjod/blogger-api-netlify.git"
+  },
+  "keywords": [
+    "netlify",
+    "express",
+    "blogger",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/setdjod/blogger-api-netlify/issues"
+  },
+  "homepage": "https://github.com/setdjod/blogger-api-netlify#readme"
+}
